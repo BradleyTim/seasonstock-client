@@ -2,14 +2,20 @@
   <header>
     <nav class="container">
       <h2 class="brand-name">
-        <nuxt-link to="/">Seasons</nuxt-link>
+        <nuxt-link to="/">
+          Seasons
+        </nuxt-link>
       </h2>
       <ul class="menu">
         <li>
-          <nuxt-link class="menu-item" to="/">Home</nuxt-link>
+          <nuxt-link class="menu-item" to="/">
+            Home
+          </nuxt-link>
         </li>
         <li>
-          <nuxt-link class="menu-item" to="/about">About</nuxt-link>
+          <nuxt-link class="menu-item" to="/about">
+            About
+          </nuxt-link>
         </li>
       </ul>
     </nav>

@@ -1,7 +1,9 @@
 <template>
   <footer>
     <div class="container">
-      <p class="copyright">&copy; Seasons Inc. All Rights Reserved.</p>
+      <p class="copyright">
+        &copy; Seasons Inc. All Rights Reserved.
+      </p>
     </div>
   </footer>
 </template>
