@@ -18,7 +18,7 @@
       Ooops! There was an Error...try again later
     </div>
     <div v-if="loading" class="loading">
-      Loading...
+      <img class="loading" src="../assets/Spinner-1s-200px.svg" alt="Spinner">
     </div>
   </div>
 </template>

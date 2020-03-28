@@ -56,4 +56,8 @@ ul {
   width: 90%;
   margin: 0 auto;
 }
+
+.loading {
+  width: 130px;
+}
 </style>
