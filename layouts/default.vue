@@ -1,8 +1,24 @@
 <template>
   <div>
-    <nuxt />
+    <the-nav-bar />
+    <div class="container">
+      <nuxt />
+    </div>
+    <the-footer />
   </div>
 </template>
+
+<script>
+import TheNavBar from '~/components/TheNavBar.vue'
+import TheFooter from '~/components/TheFooter.vue'
+
+export default {
+  components: {
+    TheNavBar,
+    TheFooter
+  }
+}
+</script>
 
 <style>
 html {
@@ -23,5 +39,20 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #444;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
 }
 </style>

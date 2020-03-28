@@ -1,5 +1,5 @@
 <template>
-  <div class=".about">
+  <div class="about">
     <h3 class="about--title">
       About Us
     </h3>
@@ -29,6 +29,11 @@ export default {
 .about {
   width: 90%;
   margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .about--title {
