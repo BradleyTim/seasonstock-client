@@ -31,8 +31,8 @@ export default {
 <style scoped>
 header {
   border-bottom: 1px solid #eee;
-  box-shadow: 0 3px 2px 0 #eee;
-  padding: .25rem 0;
+  box-shadow: 0 3px 3px 0 #eee;
+  padding: 1rem 0;
 }
 
 nav {

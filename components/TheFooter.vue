@@ -18,7 +18,7 @@ export default {
 footer {
   border-top: 1px solid #eee;
   /* box-shadow: 2px -3px 0 0 #eee; */
-  padding: .65rem 0;
+  padding: 1rem 0;
 }
 
 .copyright {

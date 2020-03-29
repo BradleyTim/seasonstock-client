@@ -134,6 +134,11 @@ export default {
     grid-row-gap: 1.5rem;
   }
 
+  .jersey-card {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
+  }
+
   .jersey-image {
     width: 80%;
   }
