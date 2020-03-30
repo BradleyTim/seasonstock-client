@@ -60,4 +60,11 @@ ul {
 .loading {
   width: 130px;
 }
+
+.loading-or-error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 </style>

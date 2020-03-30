@@ -1,35 +1,23 @@
 <template>
   <div class="index-page">
-    <div v-if="jerseys" class="jerseys-list">
-      <div v-for="jersey in jerseys" :key="jersey._id" class="jersey-card">
-        <img class="jersey-image" :src="jersey.image_url" alt="Jersey">
-        <div class="best-seller">
-          BEST SELLER
-        </div>
-        <h3 class="jersey-title">
-          <nuxt-link :to="`/jerseys/${jersey._id}`">
-            {{ jersey.name }} {{ jersey.kit }} kit
-          </nuxt-link>
-        </h3>
-        <p class="jersey-price">
-          Ksh. {{ jersey.price }}
-        </p>
-      </div>
-    </div>
-    <div v-if="error" class="error">
-      Ooops! There was an Error...try again later
-    </div>
-    <div v-if="loading" class="loading">
-      <img class="loading" src="../assets/Spinner-1s-200px.svg" alt="Spinner">
-    </div>
+    <jersey-list v-if="jerseys" :jerseys="jerseys" />
+    <Error v-if="error" />
+    <Loading v-if="loading" />
   </div>
 </template>
 
 <script>
 import axios from 'axios'
+import JerseyList from '~/components/JerseyList.vue'
+import Error from '~/components/Error.vue'
+import Loading from '~/components/Loading.vue'
 
 export default {
-  components: {},
+  components: {
+    Error,
+    Loading,
+    JerseyList
+  },
   data () {
     return {
       jerseys: null,
@@ -59,6 +47,7 @@ export default {
           this.jerseys = response.data.jerseys
         }
       } catch (error) {
+        this.loading = false
         this.error = true
       }
     }

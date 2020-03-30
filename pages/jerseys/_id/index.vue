@@ -1,28 +1,36 @@
 <template>
-  <div class="jersey-detail-page">
+  <div class="jersey-detail-page" :class="{'loading-or-error': !jersey}">
     <div v-if="jersey" class="details-wrapper">
       <div class="image-container">
         <img :src="jersey.image_url" alt="Jersey Image">
       </div>
       <div class="details-container">
-        <h2 class="jersey-name">{{ jersey.name }}</h2>
-        <p class="jersey-kit">{{ jersey.kit }} Kit</p>
-        <p class="jersey-kit">Ksh. {{ jersey.price }}</p>
+        <h2 class="jersey-name">
+          {{ jersey.name }}
+        </h2>
+        <p class="jersey-kit">
+          {{ jersey.kit }} Kit
+        </p>
+        <p class="jersey-kit">
+          Ksh. {{ jersey.price }}
+        </p>
       </div>
     </div>
-    <div v-if="loading" class="loading">
-      loading...
-    </div>
-    <div v-if="error" class="error">
-      error
-    </div>
+    <Loading v-if="loading" />
+    <Error v-if="error" />
   </div>
 </template>
 
 <script>
 import axios from 'axios'
+import Error from '~/components/Error.vue'
+import Loading from '~/components/Loading.vue'
 
 export default {
+  components: {
+    Error,
+    Loading
+  },
   data () {
     return {
       jersey: null,
@@ -50,9 +58,9 @@ export default {
         if (response.status === 200) {
           this.loading = false
           this.jersey = response.data.jersey
-          console.log(response.data.jersey)
         }
       } catch (error) {
+        this.loading = false
         this.error = true
       }
     }
