@@ -1,5 +1,7 @@
 # seasonstock-client
 
+Live site here -> [https://seasonstock-client.now.sh](https://seasonstock-client.now.sh)
+
 ## Build Setup
 
 ```bash
