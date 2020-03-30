@@ -7,7 +7,9 @@
           BEST SELLER
         </div>
         <h3 class="jersey-title">
-          {{ jersey.name }} {{ jersey.kit }} kit
+          <nuxt-link :to="`/jerseys/${jersey._id}`">
+            {{ jersey.name }} {{ jersey.kit }} kit
+          </nuxt-link>
         </h3>
         <p class="jersey-price">
           Ksh. {{ jersey.price }}
@@ -84,7 +86,6 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
-
 }
 
 .jerseys-list {
