@@ -31,14 +31,14 @@ export default {
 <style scoped>
 header {
   border-top: 1px solid #eee;
-  box-shadow: 0 -3px 3px 0 #eee;
+  /* box-shadow: 0 -3px 3px 0 #eee; */
   padding: .5rem 0;
 
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  background: #fff;
+  background: #2c3e50;
   z-index: 5;
 }
 
@@ -58,7 +58,7 @@ nav {
 .menu-item {
   margin-left: 1rem;
   font-size: 1.5rem;
-  color: #2c3e50;
+  color: #eee;
 }
 
 </style>

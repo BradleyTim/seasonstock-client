@@ -1,8 +1,8 @@
 <template>
   <header>
     <h2 class="brand-name">
-      <nuxt-link to="/">
-        Seasons
+      <nuxt-link class="brand-name-link" to="/">
+        This Season
       </nuxt-link>
     </h2>
   </header>
@@ -18,18 +18,17 @@ export default {
 header {
   border-bottom: 1px solid #eee;
   box-shadow: 0 3px 3px 0 #eee;
-  padding: .5rem 0;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: 1rem 0;
+  background: #2c3e50;
 }
 
 .brand-name {
   font-size: 2rem;
   font-weight: 400;
   text-align: center;
+}
+
+.brand-name-link {
+  color: #eee;
 }
 </style>
