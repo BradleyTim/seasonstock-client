@@ -42,7 +42,7 @@ export default {
 }
 
 .jersey-image {
-  width: 70%;
+  width: 55%;
   margin: 0 auto;
 }
 
