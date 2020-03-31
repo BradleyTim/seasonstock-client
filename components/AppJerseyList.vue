@@ -47,13 +47,13 @@ export default {
 }
 
 .jersey-title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  /* font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; */
   display: block;
   font-weight: 300;
-  font-size: 1.25rem;
-  color: #35495e;
-  /* letter-spacing: 1px; */
+  font-size: 1.15rem;
+  /* color: #35495e; */
+  color: #2c3e50;
 }
 
 .jersey-price {
@@ -87,6 +87,7 @@ export default {
   }
 
   .best-seller {
+    font-size: .9rem;
     width: 30%;
     margin: .5rem auto;
   }

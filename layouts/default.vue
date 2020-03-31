@@ -22,6 +22,37 @@ export default {
     // AppFooter,
     AppHeader,
     AppMobileNavBar
+  },
+  head () {
+    return {
+      meta: [
+        {
+          hid: 'theme-color',
+          name: 'theme-color',
+          content: '#fff'
+        },
+        {
+          hid: 'author',
+          name: 'author',
+          content: 'Bradley Tim'
+        },
+        {
+          hid: 'keywords',
+          name: 'keywords',
+          content: 'Premier League, EPL, Champions League, Europa League, Laliga'
+        },
+        {
+          hid: 'msapplication-navbutton-color',
+          name: 'msapplication-navbutton-color',
+          content: '#fff'
+        },
+        {
+          hid: 'apple-mobile-web-app-status-bar-style',
+          name: 'apple-mobile-web-app-status-bar-style',
+          content: '#fff'
+        }
+      ]
+    }
   }
 }
 </script>

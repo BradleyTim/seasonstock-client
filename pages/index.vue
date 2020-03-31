@@ -75,6 +75,9 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
+
+  /* margin bottom */
+  margin-bottom: 4rem;
 }
 
 .jerseys-list {
@@ -122,6 +125,7 @@ export default {
     display: grid;
     grid-template-columns: 1fr;
     grid-row-gap: 1.5rem;
+    margin-bottom: 2rem;
   }
 
   .jersey-card {

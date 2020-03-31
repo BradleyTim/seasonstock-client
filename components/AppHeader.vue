@@ -18,7 +18,7 @@ export default {
 header {
   border-bottom: 1px solid #eee;
   box-shadow: 0 3px 3px 0 #eee;
-  padding: 1rem 0;
+  padding: .5rem 0;
 }
 
 nav {
@@ -29,7 +29,7 @@ nav {
 
 .brand-name {
   font-size: 2rem;
-  font-weight: 900;
+  font-weight: 400;
   text-align: center;
 }
 </style>

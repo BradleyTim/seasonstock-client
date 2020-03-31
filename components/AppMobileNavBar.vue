@@ -31,8 +31,8 @@ export default {
 <style scoped>
 header {
   border-top: 1px solid #eee;
-  box-shadow: 0 -5px -4px 0 #eee;
-  padding: 1rem 0;
+  box-shadow: 0 -3px 3px 0 #eee;
+  padding: .5rem 0;
 
   position: fixed;
   bottom: 0;
@@ -58,6 +58,7 @@ nav {
 .menu-item {
   margin-left: 1rem;
   font-size: 1.5rem;
+  color: #2c3e50;
 }
 
 </style>
