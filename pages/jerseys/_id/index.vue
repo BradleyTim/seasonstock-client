@@ -82,8 +82,7 @@ export default {
 
 <style scoped>
 .jersey-detail-page {
-  margin: 2rem auto;
-  /* min-height: 100vh; */
+  margin: 5rem auto;
 }
 
 .details-wrapper {

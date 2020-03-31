@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h3 class="about--title">
+    <h3 class="about-title">
       About Us
     </h3>
   </div>
@@ -28,16 +28,15 @@ export default {
 <style>
 .about {
   width: 90%;
-  margin: 0 auto;
-  /* min-height: 100%; */
+  margin: 5rem auto;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
-.about--title {
-  font-size: 50px;
+.about-title {
+  font-size: 2rem;
   font-weight: 300;
 }
 </style>

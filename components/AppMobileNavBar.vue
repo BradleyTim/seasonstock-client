@@ -72,7 +72,6 @@ div {
   font-size: .7rem;
   margin-left: 1.15rem;
   font-weight: 100;
-  /* text-align: center; */
 }
 
 </style>

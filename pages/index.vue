@@ -69,15 +69,11 @@ export default {
 
 <style scoped>
 .index-page {
-  margin: 2rem auto;
-  /* min-height: 100vh; */
+  margin: 5rem auto;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-
-  /* margin bottom */
-  margin-bottom: 4rem;
 }
 
 .jerseys-list {
@@ -125,7 +121,6 @@ export default {
     display: grid;
     grid-template-columns: 1fr;
     grid-row-gap: 1.5rem;
-    margin-bottom: 2rem;
   }
 
   .jersey-card {
