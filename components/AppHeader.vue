@@ -1,8 +1,8 @@
 <template>
   <header>
-    <h2 class="brand-name">
+    <h2 class="container brand-name">
       <nuxt-link class="brand-name-link" to="/">
-        This Season
+        SEASON
       </nuxt-link>
     </h2>
   </header>
@@ -23,7 +23,7 @@ header {
 }
 
 .brand-name {
-  font-size: 2rem;
+  font-size: 1.65rem;
   font-weight: 400;
   text-align: center;
 }

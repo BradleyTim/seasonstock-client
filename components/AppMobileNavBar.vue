@@ -5,16 +5,25 @@
         <li>
           <nuxt-link class="menu-item" to="/">
             <font-awesome-icon :icon="['fas', 'home']" />
+            <div>
+              Home
+            </div>
           </nuxt-link>
         </li>
         <li>
           <nuxt-link class="menu-item" to="/">
             <font-awesome-icon :icon="['fas', 'shopping-cart']" />
+            <div>
+              Cart
+            </div>
           </nuxt-link>
         </li>
         <li>
           <nuxt-link class="menu-item" to="/about">
             <font-awesome-icon :icon="['fas', 'question-circle']" />
+            <div>
+              About
+            </div>
           </nuxt-link>
         </li>
       </ul>
@@ -30,10 +39,7 @@ export default {
 
 <style scoped>
 header {
-  border-top: 1px solid #eee;
-  /* box-shadow: 0 -3px 3px 0 #eee; */
   padding: .5rem 0;
-
   position: fixed;
   bottom: 0;
   left: 0;
@@ -53,12 +59,20 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  text-align: center;
 }
 
 .menu-item {
   margin-left: 1rem;
   font-size: 1.5rem;
   color: #eee;
+}
+
+div {
+  font-size: .7rem;
+  margin-left: 1.15rem;
+  font-weight: 100;
+  /* text-align: center; */
 }
 
 </style>
