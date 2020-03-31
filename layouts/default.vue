@@ -29,7 +29,7 @@ export default {
         {
           hid: 'theme-color',
           name: 'theme-color',
-          content: '#fff'
+          content: '#2c3e50'
         },
         {
           hid: 'author',
@@ -44,12 +44,12 @@ export default {
         {
           hid: 'msapplication-navbutton-color',
           name: 'msapplication-navbutton-color',
-          content: '#fff'
+          content: '#2c3e50'
         },
         {
           hid: 'apple-mobile-web-app-status-bar-style',
           name: 'apple-mobile-web-app-status-bar-style',
-          content: '#fff'
+          content: '#2c3e50'
         }
       ]
     }
