@@ -17,14 +17,14 @@ export default {
 <style scoped>
 footer {
   border-top: 1px solid #eee;
+  background: #2c3e50;
   margin-top: auto;
-  /* box-shadow: 2px -3px 0 0 #eee; */
   padding: 1rem 0;
 }
 
 .copyright {
   font-size: 1rem;
-  color: #444;
+  color: #eee;
   text-align: center;
 }
 </style>

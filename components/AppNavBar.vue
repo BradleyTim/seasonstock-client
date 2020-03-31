@@ -2,23 +2,18 @@
   <header>
     <nav class="container">
       <h2 class="brand-name">
-        <nuxt-link to="/">
+        <nuxt-link class="nav-link" to="/">
           Seasons
         </nuxt-link>
       </h2>
       <ul class="menu">
         <li>
-          <nuxt-link class="menu-item" to="/">
-            <font-awesome-icon :icon="['fas', 'home']" />
-          </nuxt-link>
-        </li>
-        <li>
-          <nuxt-link class="menu-item" to="/">
+          <nuxt-link class="menu-item nav-link" to="/">
             <font-awesome-icon :icon="['fas', 'shopping-cart']" />
           </nuxt-link>
         </li>
         <li>
-          <nuxt-link class="menu-item" to="/about">
+          <nuxt-link class="menu-item nav-link" to="/about">
             <font-awesome-icon :icon="['fas', 'question-circle']" />
           </nuxt-link>
         </li>
@@ -36,8 +31,13 @@ export default {
 <style scoped>
 header {
   border-bottom: 1px solid #eee;
-  box-shadow: 0 3px 3px 0 #eee;
-  padding: 1rem 0;
+  padding: .35rem 0;
+  background: #2c3e50;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
 }
 
 nav {
@@ -62,5 +62,9 @@ nav {
   flex: 2;
   font-size: 2rem;
   font-weight: 900;
+}
+
+.nav-link {
+  color: #eee;
 }
 </style>

@@ -1,27 +1,27 @@
 <template>
   <div class="default-app">
-    <app-header />
-    <!-- <app-nav-bar /> -->
+    <!-- <app-header /> -->
+    <app-nav-bar />
     <div class="container">
       <nuxt />
     </div>
-    <!-- <app-footer /> -->
-    <app-mobile-nav-bar />
+    <app-footer />
+    <!-- <app-mobile-nav-bar /> -->
   </div>
 </template>
 
 <script>
-// import AppNavBar from '~/components/AppNavBar.vue'
-// import AppFooter from '~/components/AppFooter.vue'
-import AppHeader from '~/components/AppHeader.vue'
-import AppMobileNavBar from '~/components/AppMobileNavBar.vue'
+import AppNavBar from '~/components/AppNavBar.vue'
+import AppFooter from '~/components/AppFooter.vue'
+// import AppHeader from '~/components/AppHeader.vue'
+// import AppMobileNavBar from '~/components/AppMobileNavBar.vue'
 
 export default {
   components: {
-    // AppNavBar,
-    // AppFooter,
-    AppHeader,
-    AppMobileNavBar
+    AppNavBar,
+    AppFooter
+    // AppHeader,
+    // AppMobileNavBar
   },
   head () {
     return {

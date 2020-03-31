@@ -1,10 +1,18 @@
 <template>
   <header>
-    <h2 class="brand-name">
-      <nuxt-link class="brand-name-link" to="/">
-        SEASON
+    <nav class="container">
+      <nuxt-link class="menu-item header-link" to="/about">
+        <font-awesome-icon :icon="['fas', 'question-circle']" />
       </nuxt-link>
-    </h2>
+      <h2 class="brand-name">
+        <nuxt-link class="brand-name-link" to="/">
+          SEASON
+        </nuxt-link>
+      </h2>
+      <nuxt-link class="menu-item header-link" to="/">
+        <font-awesome-icon :icon="['fas', 'shopping-cart']" />
+      </nuxt-link>
+    </nav>
   </header>
 </template>
 
@@ -16,16 +24,19 @@ export default {
 
 <style scoped>
 header {
-  border-bottom: 1px solid #eee;
-  /* box-shadow: 0 3px 3px 0 #eee; */
-  padding: 1rem 0;
+  padding: .45rem 0;
   background: #2c3e50;
-
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 5;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .brand-name {
@@ -34,7 +45,7 @@ header {
   text-align: center;
 }
 
-.brand-name-link {
+.brand-name-link, .header-link {
   color: #eee;
 }
 </style>

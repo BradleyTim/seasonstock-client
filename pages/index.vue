@@ -69,7 +69,7 @@ export default {
 
 <style scoped>
 .index-page {
-  margin: 5rem auto;
+  margin: 4rem auto;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -39,7 +39,7 @@ export default {
 
 <style scoped>
 header {
-  padding: .5rem 0;
+  padding: .15rem 0;
   position: fixed;
   bottom: 0;
   left: 0;
