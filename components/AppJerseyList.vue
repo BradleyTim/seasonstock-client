@@ -19,7 +19,7 @@
 
 <script>
 export default {
-  name: 'JerseyList',
+  name: 'AppJerseyList',
   props: {
     jerseys: {
       type: Array,

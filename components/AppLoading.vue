@@ -6,6 +6,6 @@
 
 <script>
 export default {
-  name: 'Loading'
+  name: 'AppLoading'
 }
 </script>

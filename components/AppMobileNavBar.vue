@@ -1,20 +1,20 @@
 <template>
   <header>
     <nav class="container">
-      <h2 class="brand-name">
-        <nuxt-link to="/">
-          Seasons
-        </nuxt-link>
-      </h2>
       <ul class="menu">
         <li>
           <nuxt-link class="menu-item" to="/">
-            Home
+            <font-awesome-icon :icon="['fas', 'home']" />
+          </nuxt-link>
+        </li>
+        <li>
+          <nuxt-link class="menu-item" to="/">
+            <font-awesome-icon :icon="['fas', 'shopping-cart']" />
           </nuxt-link>
         </li>
         <li>
           <nuxt-link class="menu-item" to="/about">
-            About
+            <font-awesome-icon :icon="['fas', 'question-circle']" />
           </nuxt-link>
         </li>
       </ul>
@@ -24,15 +24,22 @@
 
 <script>
 export default {
-  name: 'TheNavBar'
+  name: 'AppMobileNavBar'
 }
 </script>
 
 <style scoped>
 header {
-  border-bottom: 1px solid #eee;
-  box-shadow: 0 3px 3px 0 #eee;
+  border-top: 1px solid #eee;
+  box-shadow: 0 -5px -4px 0 #eee;
   padding: 1rem 0;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 5;
 }
 
 nav {
@@ -44,17 +51,13 @@ nav {
 .menu {
   flex: 1;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
   align-items: center;
 }
 
 .menu-item {
   margin-left: 1rem;
+  font-size: 1.5rem;
 }
 
-.brand-name {
-  flex: 2;
-  font-size: 2rem;
-  font-weight: 900;
-}
 </style>

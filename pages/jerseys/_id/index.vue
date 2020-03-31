@@ -16,20 +16,20 @@
         </p>
       </div>
     </div>
-    <Loading v-if="loading" />
-    <Error v-if="error" />
+    <app-loading v-if="loading" />
+    <app-error v-if="error" />
   </div>
 </template>
 
 <script>
 import axios from 'axios'
-import Error from '~/components/Error.vue'
-import Loading from '~/components/Loading.vue'
+import AppError from '~/components/AppError.vue'
+import AppLoading from '~/components/AppLoading.vue'
 
 export default {
   components: {
-    Error,
-    Loading
+    AppError,
+    AppLoading
   },
   data () {
     return {
@@ -83,7 +83,7 @@ export default {
 <style scoped>
 .jersey-detail-page {
   margin: 2rem auto;
-  min-height: 70vh;
+  /* min-height: 100vh; */
 }
 
 .details-wrapper {

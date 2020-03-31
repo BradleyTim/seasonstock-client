@@ -1,22 +1,22 @@
 <template>
   <div class="index-page">
-    <jersey-list v-if="jerseys" :jerseys="jerseys" />
-    <Error v-if="error" />
-    <Loading v-if="loading" />
+    <app-jersey-list v-if="jerseys" :jerseys="jerseys" />
+    <app-error v-if="error" />
+    <app-loading v-if="loading" />
   </div>
 </template>
 
 <script>
 import axios from 'axios'
-import JerseyList from '~/components/JerseyList.vue'
-import Error from '~/components/Error.vue'
-import Loading from '~/components/Loading.vue'
+import AppJerseyList from '~/components/AppJerseyList.vue'
+import AppError from '~/components/AppError.vue'
+import AppLoading from '~/components/AppLoading.vue'
 
 export default {
   components: {
-    Error,
-    Loading,
-    JerseyList
+    AppError,
+    AppLoading,
+    AppJerseyList
   },
   data () {
     return {
@@ -70,7 +70,7 @@ export default {
 <style scoped>
 .index-page {
   margin: 2rem auto;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;

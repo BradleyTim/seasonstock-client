@@ -10,13 +10,14 @@
 
 <script>
 export default {
-  name: 'TheFooter'
+  name: 'AppFooter'
 }
 </script>
 
 <style scoped>
 footer {
   border-top: 1px solid #eee;
+  margin-top: auto;
   /* box-shadow: 2px -3px 0 0 #eee; */
   padding: 1rem 0;
 }

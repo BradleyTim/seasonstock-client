@@ -1,21 +1,27 @@
 <template>
-  <div>
-    <the-nav-bar />
+  <div class="default-app">
+    <app-header />
+    <!-- <app-nav-bar /> -->
     <div class="container">
       <nuxt />
     </div>
-    <the-footer />
+    <!-- <app-footer /> -->
+    <app-mobile-nav-bar />
   </div>
 </template>
 
 <script>
-import TheNavBar from '~/components/TheNavBar.vue'
-import TheFooter from '~/components/TheFooter.vue'
+// import AppNavBar from '~/components/AppNavBar.vue'
+// import AppFooter from '~/components/AppFooter.vue'
+import AppHeader from '~/components/AppHeader.vue'
+import AppMobileNavBar from '~/components/AppMobileNavBar.vue'
 
 export default {
   components: {
-    TheNavBar,
-    TheFooter
+    // AppNavBar,
+    // AppFooter,
+    AppHeader,
+    AppMobileNavBar
   }
 }
 </script>
@@ -32,6 +38,7 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   overflow-x: hidden;
+  min-height: 100vh;
 }
 
 *,
@@ -40,6 +47,12 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.default-app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -54,6 +67,7 @@ ul {
 
 .container {
   width: 90%;
+  min-height: 100%;
   margin: 0 auto;
 }
 
@@ -66,5 +80,11 @@ ul {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .remove {
+    display: none;
+  }
 }
 </style>

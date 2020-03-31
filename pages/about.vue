@@ -29,7 +29,7 @@ export default {
 .about {
   width: 90%;
   margin: 0 auto;
-  min-height: 100vh;
+  /* min-height: 100%; */
   display: flex;
   justify-content: center;
   align-items: center;
