@@ -1,27 +1,21 @@
 <template>
   <div class="default-app">
-    <!-- <app-header /> -->
     <app-nav-bar />
     <div class="container">
       <nuxt />
     </div>
     <app-footer />
-    <!-- <app-mobile-nav-bar /> -->
   </div>
 </template>
 
 <script>
 import AppNavBar from '~/components/AppNavBar.vue'
 import AppFooter from '~/components/AppFooter.vue'
-// import AppHeader from '~/components/AppHeader.vue'
-// import AppMobileNavBar from '~/components/AppMobileNavBar.vue'
 
 export default {
   components: {
     AppNavBar,
     AppFooter
-    // AppHeader,
-    // AppMobileNavBar
   },
   head () {
     return {
@@ -111,11 +105,5 @@ ul {
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
-@media screen and (max-width: 600px) {
-  .remove {
-    display: none;
-  }
 }
 </style>

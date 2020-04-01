@@ -121,5 +121,10 @@ export default {
     align-items: center;
     text-align: center;
   }
+
+  .image-container img {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 </style>

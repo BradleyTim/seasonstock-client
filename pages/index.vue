@@ -129,7 +129,7 @@ export default {
   }
 
   .jersey-image {
-    width: 80%;
+    width: 50%;
   }
 
   .best-seller {
