@@ -117,6 +117,7 @@ input[type='file'] {
 }
 
 .btn {
+  display: inline-block;
   border: 1px solid #777;
   border-radius: 2px;
   padding: .5rem 1.25rem;
