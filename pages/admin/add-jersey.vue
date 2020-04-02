@@ -1,13 +1,13 @@
 <template>
   <section class="add-jersey-page">
-    <div>ADD JERSEY</div>
+    <div class="title">ADD JERSEY</div>
     <form enctype="multipart/form-data" v-if="!loading" @submit.prevent="addJersey">
-      <input v-model="jersey.name" type="text" name="name" placeholder="name">
-      <input type="file" name="image" placeholder="image" @change="onFileChange">
-      <input v-model="jersey.price" type="text" name="price" placeholder="price">
-      <input v-model="jersey.kit" type="text" name="kit" placeholder="kit">
+      <input v-model="jersey.name" type="text" name="name" placeholder="name" required>
+      <input v-model="jersey.price" type="text" name="price" placeholder="price" required>
+      <input v-model="jersey.kit" type="text" name="kit" placeholder="kit" required>
+      <input type="file" name="image" placeholder="image" @change="onFileChange" required>
       <button type="submit" class="btn">
-        ADD
+        Add New Jersey
       </button>
     </form>
     <app-loading v-if="loading" />
@@ -90,7 +90,13 @@ export default {
 }
 
 input {
-  display: block;
   margin: 1rem 0;
+}
+
+.title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #777;
 }
 </style>
