@@ -90,6 +90,49 @@ ul {
   list-style: none;
 }
 
+input[type='text'] {
+  display: block;
+  width: 100%;
+  padding: .75rem;
+  border: 2px solid #777;
+  border-radius: 2px;
+}
+
+input[type='text']:focus {
+  border: 2px solid rgb(78, 211, 106);
+}
+
+input[type='text']::placeholder {
+  font-size: 1rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+input[type='file'] {
+  display: block;
+  width: 100%;
+  background: #2c3e50;
+  color: #eee;
+  border-radius: 2px;
+}
+
+.btn {
+  border: 1px solid #777;
+  border-radius: 2px;
+  padding: .5rem 1.25rem;
+  text-align: center;
+  background: #2c3e50;
+  color: #ccc;
+  font-size: 1.15rem;
+  font-weight: 700;
+  transition: all 300ms ease;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #2c3e50;
+}
+
 .container {
   width: 90%;
   min-height: 100%;
